@@ -9,7 +9,6 @@ RUN apk update \
          && apk add --no-cache ca-certificates \
          && update-ca-certificates \
          && apk add --no-cache \
-                               curl \
                                jq \
                                nodejs \
                                nodejs-npm \
@@ -19,9 +18,8 @@ RUN apk update \
           && npm config set unsafe-perm false \
           && cd \
           && mkdir -p /waker/data \
-          && apk del curl \
           && rm -rf /var/cache/apk/* \
-          && rm -rf ps4waker-rest
+          && rm -rf /ps4waker-rest
 
 COPY run.sh /
 

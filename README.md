@@ -14,6 +14,7 @@ To generate the file `ps4-config.json` run the following commends:
 4. `ps4-waker -c /waker/data/ps4-creds.json`
 5. Complete the pairing process and quit ps4-waker when you're done (ctrl + c).
 6. Type ctrl + d to exit the container
+
 **Note**: The container will have ps4-waker installed as long as you don't remove it. Make sure you mount a folder to `/waker/data` otherwise the credentials will be lost when you remove the container.
 
 The REST wrapper around ps4-waker will listen on port `3031` by default. If you encounter any port conflicts run the container with the port option: `-p XXXX:3031`

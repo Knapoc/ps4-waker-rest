@@ -18,8 +18,7 @@ RUN apk update \
           && npm config set unsafe-perm false \
           && cd \
           && mkdir -p /waker/data \
-          && rm -rf /var/cache/apk/* \
-          && rm -rf /ps4waker-rest
+          && rm -rf /var/cache/apk/*
 
 COPY run.sh /
 

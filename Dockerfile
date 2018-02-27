@@ -20,7 +20,7 @@ RUN apk update \
           && cd \
           && mkdir -p /waker/data \
           && apk del curl \
-          && rm -rf /var/cache/apk/*
+          && rm -rf /var/cache/apk/* \
           && rm -rf ps4waker-rest
 
 COPY run.sh /

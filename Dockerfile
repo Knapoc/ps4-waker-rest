@@ -19,7 +19,7 @@ RUN apk update \
     && cd \
     && mkdir -p /waker/data \
     && rm -rf /var/cache/apk/*
-    
+
 COPY run.sh
 
 RUN chmod a+x /run.sh
